@@ -65,7 +65,7 @@ def mAdd(images_table, template_header, out_image, img_dir=None,
         simultaneously (default is 8)
     '''
     if mpi:
-        command = _get_mpi_command(executable="mAddMPI", n_proc=n_proc)
+        command = _get_mpi_command(executable="mAdd", n_proc=n_proc)
     else:
         command = "mAdd"
     if img_dir:
@@ -148,7 +148,7 @@ def mAddExec(images_table, template_header, tile_dir, out_image, img_dir=None,
         simultaneously (default is 8)
     '''
     if mpi:
-        command = _get_mpi_command(executable="mAddExecMPI", n_proc=n_proc)
+        command = _get_mpi_command(executable="mAddExec", n_proc=n_proc)
     else:
         command = "mAddExec"
     if img_dir:
@@ -466,7 +466,7 @@ def mBgExec(images_table, corrections_table, corr_dir, proj_dir=None,
         simultaneously (default is 8)
     '''
     if mpi:
-        command = _get_mpi_command(executable="mBgExecMPI", n_proc=n_proc)
+        command = _get_mpi_command(executable="mBgExec", n_proc=n_proc)
     else:
         command = "mBgExec"
     if proj_dir:
@@ -770,7 +770,7 @@ def mDiffExec(diffs_table, template_header, diff_dir, proj_dir=None,
         simultaneously (default is 8)
     '''
     if mpi:
-        command = _get_mpi_command(executable="mDiffExecMPI", n_proc=n_proc)
+        command = _get_mpi_command(executable="mDiffExec", n_proc=n_proc)
     else:
         command = "mDiffExec"
     if proj_dir:
@@ -967,7 +967,7 @@ def mFitExec(diffs_table, fits_table, diff_dir, debug=False, status_file=None,
         simultaneously (default is 8)
     '''
     if mpi:
-        command = _get_mpi_command(executable="mFitExecMPI", n_proc=n_proc)
+        command = _get_mpi_command(executable="mFitExec", n_proc=n_proc)
     else:
         command = "mFitExec"
     if debug:
@@ -1806,7 +1806,7 @@ def mProjExec(images_table, template_header, proj_dir, stats_table,
         simultaneously (default is 8)
     '''
     if mpi:
-        command = _get_mpi_command(executable="mProjExecMPI", n_proc=n_proc)
+        command = _get_mpi_command(executable="mProjExec", n_proc=n_proc)
     else:
         command = "mProjExec"
     if raw_dir:
